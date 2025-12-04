@@ -38,7 +38,7 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
-      <div className="flex-grow pt-24 max-w-6xl mx-auto px-4">
+      <div className="grow pt-24 max-w-6xl mx-auto px-4">
         {/* Trending Anime Section */}
         <Section title="Trending Anime">
           {trendingAnimeLoading ? (
