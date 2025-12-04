@@ -6,6 +6,7 @@ import characterReducer from "./characterSlice";
 import animeDetailsReducer from "./animeDetailsSlice";
 import trendingAnimeReducer from "./trendingAnimeSlice";
 import genreReducer from "./genreSlice";
+import getCharacterReducer from "./getCharacterSlice";
 
 const store = configureStore({
     reducer: {
@@ -15,7 +16,8 @@ const store = configureStore({
         character: characterReducer,
         animeDetails: animeDetailsReducer,
         trending: trendingAnimeReducer,
-        genre: genreReducer
+        genre: genreReducer,
+        getCharacter: getCharacterReducer,
     }
 })
 

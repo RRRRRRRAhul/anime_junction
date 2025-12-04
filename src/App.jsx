@@ -7,6 +7,7 @@ import Seasonal from "./pages/Seasonal";
 import TopRated from "./pages/TopRated";
 import Popular from "./pages/Popular";
 import Trending from "./pages/Trending";
+import CharacterById from "./pages/CharacterById";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -39,6 +40,9 @@ function App() {
 
           {/* Trending Anime */}
           <Route path="/trending" element={<Trending />} />
+
+          {/* Show Character info by ID */}
+          <Route path="/character/:charId" element={<CharacterById />} />
         </Routes>
       </main>
 
